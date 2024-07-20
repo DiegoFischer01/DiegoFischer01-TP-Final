@@ -1,0 +1,132 @@
+/*CSS pag Principal*/
+
+body {
+    background-size: 100%;
+    /* border: 1px solid orangered; */
+    margin: 10px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 98%;
+    height: auto;
+
+}
+
+header {
+    /* border: 3px solid violet; */
+    box-sizing: border-box;
+    padding: 0;
+    contain: content;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin: 10px;
+    /*Letras*/
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: darkgray;
+
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    /*Alineacion Horizontal*/
+    align-content: center;
+}
+
+.boxHeader {
+    width: 80%;
+    /* border: 1px solid steelblue; */
+    display: flex;
+    justify-content: center; /*Horizontal*/
+    flex-wrap: nowrap;
+    align-content: center; /*Alineado vertical*/
+    
+}
+
+a {
+    color: steelblue;
+    margin: 10px;
+    margin-right: 60px;
+
+}
+
+a:hover {
+    color: chartreuse;
+    
+}
+
+.calendario{
+    border-radius: 20px;
+    width: 40%;
+    height: 40px;
+}
+
+.bloque2 {
+    box-sizing: border-box;
+    /*Para que mantenga el tamaño siempre de los bordes*/
+     border: 2px solid;
+     border-color: lightgray;
+     border-radius: 25px;
+    /*background-color: crimson; */
+    height: 100px;
+    width: 100%; /*Ancho*/
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /*Alineado vertical*/
+    justify-content: left;  /*Alineacion Horizontal*/
+       
+}
+
+.logo {
+    /* border: 1px solid yellow; */
+    width: 30%;
+    height: 100%;
+    background-image: url(./Imagenes/business-logo-design-template-78655edda18bc1196ab28760f1535baa_screen.jpg);
+    background-size: contain;
+    /*Para contener img si os i dentro del div*/
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.barra {
+    border: 3px solid gray;
+    border-radius: 20px;
+    width: 90%;
+    height: 40px;
+    
+}
+
+.contenedorDibujos{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px;
+    justify-content: end;
+    width: 35%;
+    gap: 20px; /*Separacion entre elementos (dentro de este div*/
+}
+
+/* div>div>div{
+    margin: 5px;    
+} Esto ya no se necesita con (gap)*/
+
+.Historia{
+    border: 3px solid blue;
+    height: 400px;
+    width: 30%;
+    background-color: brown;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.ListadeProductos{
+    border: 3px solid orangered;
+    height: 400px;
+    width: 30%;
+    background-color:blanchedalmond;
+    margin-top: 100px;
+    margin-right: 150px;
+}
