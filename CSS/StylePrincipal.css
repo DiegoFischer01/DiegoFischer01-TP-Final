@@ -15,13 +15,13 @@ body {
 
 header {
     /* border: 3px solid violet; */
-    box-sizing: border-box;
-    padding: 0;
+    /* box-sizing: border-box; */
+    
     contain: content;
     background-color: white;
-    height: 50px;
+    height: 80px;
     width: 100%;
-    margin: 10px;
+    margin: 2px;
     /*Letras*/
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
@@ -32,21 +32,21 @@ header {
     display: flex;
     justify-content: center;
     /*Alineacion Horizontal*/
-    align-content: center;
+    align-content: normal;
 }
 
 .boxHeader {
     width: 80%;
-    /* border: 1px solid steelblue; */
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center; /*Horizontal*/
     flex-wrap: nowrap;
-    align-content: center; /*Alineado vertical*/
-    
+    align-items: center; /*Alineado vertical*/
+    margin: 0;
 }
 
 a {
-    color: steelblue;
+    color: black;
     margin: 10px;
     margin-right: 60px;
 
@@ -76,7 +76,7 @@ a:hover {
     flex-wrap: nowrap;
     align-items: center; /*Alineado vertical*/
     justify-content: left;  /*Alineacion Horizontal*/
-       
+    margin: 0;   
 }
 
 .logo {
@@ -88,7 +88,7 @@ a:hover {
     /*Para contener img si os i dentro del div*/
     background-repeat: no-repeat;
     background-position: center;
-    
+    margin: 0;
 }
 
 .barra {
