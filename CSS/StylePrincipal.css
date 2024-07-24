@@ -146,7 +146,8 @@ a:hover {
     border: 2px solid blue;
     color: black;
     margin: 10px;
-    width: 15%;
+    width: 20%;
+    height: 40%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
