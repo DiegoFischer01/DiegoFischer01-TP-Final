@@ -130,3 +130,17 @@ a:hover {
     margin-top: 100px;
     margin-right: 150px;
 }
+
+#lista{
+    border: 3px solid green;
+    margin: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.liJS{
+    border: 1px solid black;
+    color: blue;
+    margin: 5px;
+}

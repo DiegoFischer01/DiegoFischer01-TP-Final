@@ -2,9 +2,9 @@
 
 //Cargar arrays desde JS.
 
-let lista = document.getElementById("productos");
-const productos = ["Pan", "Leche", "Carne" , "Yerba", "Fideos", "Arroz"];
-const precios = ["1000", "2000", "3000", "4000" , "5000","6000"];
+let lista = document.getElementById("lista");
+const productos = ["Pan", "Leche", "Carne" , "Yerba", "Fideos", "Arroz" , "Coca-Cola" , "Fosforos" , "Pescado" , "Desodorante"];
+const precios = ["1000", "2000", "3000", "4000" , "5000","6000" , "7000" , "8000" , "9000" , "10000"];
 
 function cargarProductos(arrayProductos, arrayPrecios) {
 
@@ -12,7 +12,7 @@ function cargarProductos(arrayProductos, arrayPrecios) {
         let li = document.createElement("li");
         let texto = document.createTextNode(`${arrayProductos[i]} - Precio: $${arrayPrecios[i]}`);
         li.appendChild(texto);
-        li.setAttribute("class", "nombreDeLaClase")
+        li.setAttribute("class", "liJS")
         lista.appendChild(li);
     }
 
