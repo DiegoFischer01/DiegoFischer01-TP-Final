@@ -7,34 +7,31 @@ const productos = ["Pan", "Leche", "Carne" , "Yerba", "Fideos", "Arroz" , "Coca-
 const precios = ["1000", "2000", "3000", "4000" , "5000","6000" , "7000" , "8000" , "9000" , "10000"];
 
 function cargarProductos(arrayProductos, arrayPrecios) {
-
     for (let i = 0; i < arrayProductos.length; i++) {
         let li = document.createElement("li");
         let texto = document.createTextNode(`${arrayProductos[i]} - Precio: $${arrayPrecios[i]}`);
         li.appendChild(texto);
-        li.setAttribute("class", "liJS")
+        li.setAttribute("class", "liJS");
         lista.appendChild(li);
-    }
 
+        // Crear el input para la cantidad
+        let inputCantidad = document.createElement("input");
+        inputCantidad.type = "number";
+        inputCantidad.value = "0";
+        inputCantidad.min = "1";
+        li.appendChild(inputCantidad);
+
+        // Crear el botón para agregar al carrito
+        let botonAgregar = document.createElement("button");
+        botonAgregar.textContent = "Agregar";
+        li.appendChild(botonAgregar);      
+    }
 }
 
-cargarProductos(productos,precios);
-// //Despues si quiero agregar mas, los agrego en los arrays de Productos y Precios; pero NO modifico la funcion.
+cargarProductos(productos, precios);
 
 
 // //---------------------------------------------------------------------------------------
-
-
-// //Alternativa mas facil:
-
-// function pintarProductos2(arrayProductos, arrayPrecios){
-
-//     for (let i = 0; i < arrayProductos.length; i++){
-//         lista.innerHTML += `<li> Prod: ${arrayProductos[i]} - Precio: $${arrayPrecios[i]} </li>`
-//     }
-// }
-
-// pintarProductos2(productos,precios);
 
 
 // //Funcion para crear imagenes desde JS.
@@ -50,17 +47,3 @@ cargarProductos(productos,precios);
 // crearImagen("./imagenJS.png" , "Imagen de JS");
 
 // crearImagen("./flores.jpg" , "Flores");
-
-
-//-----------------------------------------------------------------------------------------------------
-
-// Tambien se pueden cargar con json.
-
-// const producto={
-//     "nombre":"arroz",
-//     "cantidad":35,
-//     "precio":1500
-// }
-
-// console.log("Del producto "+ producto.nombre + " tengo "
-//     + producto.cantidad + " unidades que valen c/u $"+ producto.precio);
