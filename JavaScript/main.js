@@ -3,8 +3,8 @@
 //Cargar arrays desde JS.
 
 let lista = document.getElementById("lista");
-const productos = ["Pan  ", "Leche", "Carne" , "Yerba", "Fideos", "Arroz" , "Coca-Cola" , "Fosforos" , "Pescado" , "Desodorante"];
-const precios = ["10000", "2000", "3000", "4000" , "5000","6000" , "7000" , "8000" , "9000" , "10000"];
+const productos = ["Pan  ", "Leche", "Carne", "Yerba", "Fideos", "Arroz", "Coca-Cola", "Fosforos", "Pescado", "Desodorante"];
+const precios = ["10000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000"];
 
 function cargarProductos(arrayProductos, arrayPrecios) {
     for (let i = 0; i < arrayProductos.length; i++) {
@@ -24,7 +24,7 @@ function cargarProductos(arrayProductos, arrayPrecios) {
         // Crear el botón para agregar al carrito
         let botonAgregar = document.createElement("button");
         botonAgregar.textContent = "Agregar";
-        li.appendChild(botonAgregar);      
+        li.appendChild(botonAgregar);
     }
 }
 

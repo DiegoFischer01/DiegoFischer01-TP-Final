@@ -85,7 +85,7 @@ a:hover {
     height: 100%;
     background-image: url(../Imagenes/business-logo-design-template-78655edda18bc1196ab28760f1535baa_screen.jpg);
     background-size: contain;
-    /*Para contener img si os i dentro del div*/
+    /*Para contener img si o si dentro del div*/
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
