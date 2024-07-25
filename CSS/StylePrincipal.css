@@ -62,7 +62,7 @@ a:hover {
 }
 
 .bloque2 {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /*Para que mantenga el tamaño siempre de los bordes*/
      border: 2px solid;
      border-color: lightgray;
@@ -86,7 +86,6 @@ a:hover {
     /*Para contener img si o si dentro del div*/
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0;
 }
 
 .barra {
@@ -114,21 +113,18 @@ a:hover {
 .Historia{
     border: 3px solid blue;
     height: 400px;
-    width: 30%;
-    background-color: brown;
-    margin-top: 100px;
-    margin-left: 150px;
+    width: 100%;
+    margin-top: 50px;
     margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.ListadeProductos{
-    border: 3px solid orangered;
-    height: 400px;
-    width: 30%;
-    background-color:blanchedalmond;
-    margin-top: 100px;
-    margin-right: 150px;
-    margin-left: 150px;
+.fotoHistoria{
+    border: 1px solid yellow;
+    width: 80%;
+    height: 50%;
 }
 
 #lista{
