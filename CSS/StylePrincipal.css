@@ -15,8 +15,6 @@ body {
 
 header {
     /* border: 3px solid violet; */
-    /* box-sizing: border-box; */
-    
     contain: content;
     background-color: white;
     height: 80px;
@@ -27,12 +25,12 @@ header {
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     color: darkgray;
-
-    flex-wrap: nowrap;
     display: flex;
     justify-content: center;
     /*Alineacion Horizontal*/
     align-content: normal;
+    flex-wrap: nowrap;
+    
 }
 
 .boxHeader {
