@@ -120,6 +120,7 @@ a:hover {
     background-color: brown;
     margin-top: 100px;
     margin-left: 150px;
+    margin-bottom: 150px;
 }
 
 .ListadeProductos{
@@ -129,6 +130,7 @@ a:hover {
     background-color:blanchedalmond;
     margin-top: 100px;
     margin-right: 150px;
+    margin-left: 150px;
 }
 
 #lista{
@@ -154,4 +156,20 @@ a:hover {
 input{
     width: 40%;
     margin: 1px;
+}
+
+.promos{
+    border: 3px solid black;
+    height: 300px;
+    width: 100%;
+}
+
+
+footer{
+    border: 3px solid orangered;
+    width: 100%;
+    height: 150px;
+    align-items: end;
+    margin-top: 100px;
+    
 }
