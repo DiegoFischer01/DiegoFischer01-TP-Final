@@ -51,14 +51,8 @@ a {
 }
 
 a:hover {
-    color: chartreuse;
+    color: teal;
     
-}
-
-.calendario{
-    border-radius: 20px;
-    width: 40%;
-    height: 40px;
 }
 
 .bloque2 {
@@ -93,14 +87,14 @@ a:hover {
     border-radius: 20px;
     width: 90%;
     height: 40px;
-    
+    margin-left: 40px;
 }
 
 .contenedorDibujos{
     /* border: 1px solid black; */
     display: flex;
     flex-wrap: nowrap;
-    margin: 50px;
+    margin-right: 50px;
     justify-content: end;
     width: 35%;
     gap: 20px; /*Separacion entre elementos (dentro de este div*/
@@ -118,7 +112,7 @@ h1{
 
 .Historia{
     /* border: 3px solid blue; */
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-top:3px;
     margin-bottom: 5px;
@@ -169,9 +163,19 @@ input{
     border: 3px solid black;
     height: 300px;
     width: 100%;
-    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.cards{
+    border: 1px solid blue;
+    height: 100%;
+    width: 30%;
+    margin: 10px;
+    border-radius: 25px;
+}
 
 footer{
     border: 3px solid orangered;
