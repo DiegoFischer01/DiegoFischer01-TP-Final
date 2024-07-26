@@ -21,6 +21,7 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         let inputCantidad = document.createElement("input");
         inputCantidad.type = "number";
         inputCantidad.value = "0";
+        inputCantidad.min = "0"; // Para no poner comas.
         li.appendChild(inputCantidad);
 
         // Creo los botones para agregar al carrito.
