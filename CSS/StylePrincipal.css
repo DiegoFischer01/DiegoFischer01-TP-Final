@@ -56,18 +56,16 @@ a:hover {
 }
 
 .bloque2 {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     /*Para que mantenga el tamaño siempre de los bordes*/
-     /* border: 2px solid;
-     border-color: lightgray;
-     border-radius: 25px; */
+    /* border: 2px solid; */
     background-color:steelblue;
-    height: 100px;
+    height: 120px;
     width: 100%; /*Ancho*/
     display: flex;
     flex-wrap: nowrap;
     align-items: center; /*Alineado vertical*/
-    justify-content: left;  /*Alineacion Horizontal*/
+    justify-content: center;  /*Alineacion Horizontal*/
     margin: 0;   
 }
 
@@ -75,19 +73,20 @@ a:hover {
     /* border: 1px solid yellow; */
     width: 30%;
     height: 90%;
-    background-image: url(../Imagenes/Logo.png);
-    /* background-size: contain; */
-    /*Para contener img si o si dentro del div*/
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-left: 20px;
+}
+
+.imgLogo{
+    width: 120px;
+    height: 110px;
 }
 
 .barra {
     border: 3px solid gray;
     border-radius: 20px;
-    width: 90%;
+    width: 80%;
     height: 40px;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .contenedorDibujos{
