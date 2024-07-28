@@ -217,6 +217,15 @@ footer{
     align-items: center;
 }
 
+.divsFoot1{
+    border: 1PX solid black;
+
+}
+
+.divsFoot2{
+    border: 1px solid red;
+}
+
 .divsFoot3{
     /* border: 1px solid black; */
     display:grid;
@@ -228,10 +237,11 @@ footer{
     /* border: 1px solid red; */
     width: 50%;
     height: 40px;
-    font-size: 34px;
+    font-size: 38px;
     color: cornsilk;
     display: flex;
     justify-content: right;
+    margin-left: 20px;
 }
 
 .copyright1{
