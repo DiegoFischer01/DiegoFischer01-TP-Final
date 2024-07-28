@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: auto;
-
+    
 }
 
 header {
@@ -114,10 +114,10 @@ h1{
     /* border: 3px solid blue; */
     height: 600px;
     width: 100%;
-    margin-top:3px;
+    /* margin-top:3px;
     margin-bottom: 5px;
     margin-right: 2px;
-    margin-left: 10px;
+    margin-left: 10px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,12 +128,36 @@ h1{
 .fotoHistoria{
     /* border: 1px solid yellow; */
     width: 100%;
-    height: 55%;
+    height: 60%;
     background-image: url(../Imagenes/Exterior_Super.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     
+}
+
+.galeria{
+    /* border: 3px solid black; */
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards{
+    /* border: 1px solid blue; */
+    height: 80%;
+    width: 25%;
+    margin: 10px;
+    border-radius: 25px;
+    
+}
+
+.gondolas{
+    width: 100%;
+    height: 100%;
 }
 
 #lista{
@@ -162,31 +186,7 @@ input{
     margin: 1px;
 }
 
-.promos{
-    border: 3px solid black;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.cards{
-    border: 1px solid blue;
-    height: 100%;
-    width: 30%;
-    margin: 10px;
-    border-radius: 25px;
-}
-
-footer{
-    border: 3px solid orangered;
-    width: 100%;
-    height: 200px;
-    margin-top: 50px;
-    
-}
 
 h2{
     width: 100%;
@@ -202,4 +202,73 @@ h2{
     height: 100px;
     width: 50%;
     
+}
+
+
+
+footer{
+    background-color: steelblue;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.divsFoot3{
+    /* border: 1px solid black; */
+    display:grid;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.copyrightLogo{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 40px;
+    font-size: 34px;
+    color: cornsilk;
+    display: flex;
+    justify-content: right;
+}
+
+.copyright1{
+    /* border: 1px solid yellow; */
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+    font-size: 18px;
+}
+
+.copyright2{
+    /* border: 1px solid yellow; */
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+    font-size: 14px;
+}
+
+.copyright3{
+    /* border: 1px solid yellow; */
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+    font-size: 16px;
 }
