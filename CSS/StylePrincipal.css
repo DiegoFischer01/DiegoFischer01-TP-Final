@@ -212,7 +212,12 @@ h1{
 
 .btnFinCom:hover{
     border: 2px solid blue;
+    color: springgreen;
+}
 
+.inputs:focus{
+    border-color: blue;
+    
 }
 
 .superpromo{

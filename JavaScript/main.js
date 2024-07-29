@@ -22,6 +22,7 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         inputCantidad.type = "number";
         inputCantidad.value = "0";
         inputCantidad.min = "0"; // Para no poner comas.
+        inputCantidad.setAttribute("class" , "inputs")
         li.appendChild(inputCantidad);
 
         // Creo los botones para agregar al carrito.
