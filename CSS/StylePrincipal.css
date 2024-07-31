@@ -58,6 +58,10 @@ h1{
     font-size: 40px;
 }
 
+h1:hover{
+    color: blueviolet;
+}
+
 a {
     color: black;
     margin: 10px;
@@ -149,6 +153,12 @@ a:hover {
     
 }
 
+.spHistoria{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+
 .fotoHistoria{
     /* border: 1px solid yellow; */
     width: 100%;
@@ -158,6 +168,20 @@ a:hover {
     background-position: center;
     background-size: auto;
     
+}
+
+.promo30Home{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.imgPromoHome{
+    width: 60%;
 }
 
 .galeria{
