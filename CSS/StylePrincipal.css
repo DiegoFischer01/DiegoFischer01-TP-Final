@@ -1,7 +1,7 @@
 /*CSS pag Principal*/
 
 body {
-    background-size: 100%;
+    /* background-size: 100%; */
     /* border: 1px solid orangered; */
     margin: 0;
     background: white;
@@ -34,13 +34,28 @@ header {
 }
 
 .boxHeader {
-    width: 80%;
+    width: 90%;
     /* border: 1px solid black; */
     display: flex;
-    justify-content: center; /*Horizontal*/
+    justify-content: space-around; /*Horizontal*/
     flex-wrap: nowrap;
     align-items: center; /*Alineado vertical*/
     margin: 0;
+}
+
+.SuperSelecto{
+    /* border: 1px solid red; */
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    
+}
+
+h1{
+    color: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
 }
 
 a {
@@ -71,14 +86,14 @@ a:hover {
 
 .logo {
     /* border: 1px solid yellow; */
-    width: 30%;
-    height: 90%;
-    margin-left: 20px;
+    width: 80%;
+    height: auto;
+    margin-left: 40px;
 }
 
 .imgLogo{
-    width: 120px;
-    height: 110px;
+    width: 100%;
+    height: 100%;
 }
 
 .barra {
@@ -107,15 +122,16 @@ a:hover {
     /* border: 2px solid green; */
     width: 100%;
     height: 265px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     background-color: lightblue;
 }
 
 .imgHor{
-    width: 80%;
+    width: 60%;
+
 }
 
 .Historia{
