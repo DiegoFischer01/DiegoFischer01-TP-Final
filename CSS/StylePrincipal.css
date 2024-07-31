@@ -257,31 +257,31 @@ h2{
    
 }
 
-.fNom{
+.divFormNom{
     width: 100%;
     
 }
 
-.fApe{
+.divFormApellido{
     width: 100%;
 }
 
-.fEma{
+.divFormEmail{
     width: 100%;
 }
 
-.fTel{
+.divFormTel{
     width: 100%;
 }
 
-.fConsul{
+.divFormConsul{
     width: 100%;
     border: 1px solid red;
     display: flex;
     align-items: center;
 }
 
-.iFconsul{
+.inputFormConsul{
     width: 80%;
     height: 100px;
 }
@@ -294,11 +294,9 @@ h2{
     align-items: center;
 }
 
-.divEnv:focus{
-    border-color: blue;
-}
 
-.fEnv{
+
+.btnFormEnviar{
     width: 200px;
     height: 50px;
     margin-right: 20px;
