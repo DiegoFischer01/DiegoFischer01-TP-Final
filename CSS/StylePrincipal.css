@@ -499,8 +499,9 @@ footer{
 .divsFoot3{
     /* border: 1px solid red; */
     display:grid;
-    justify-content: space-around;
+    justify-content: center;
     align-items: end;
+    width: 400px;
     height: 80%;
     color: cornsilk;
     font-size: 20px;
@@ -509,9 +510,21 @@ footer{
 
 .regFoot{
     color: cornsilk;
-    font-size: 40px;
+    font-size: 30px;
+    margin-left: 60px;
+    font-style: oblique;
+}
+
+.llamanos{
+    display: flex;
+    justify-content: center;
 }
 
 .regFoot:hover{
     color: blue;
+   
+}
+
+.atc{
+    margin-left: 38px;
 }
