@@ -60,7 +60,10 @@ h1{
 
 h1:hover{
     color: blueviolet;
+    cursor: default;
 }
+
+
 
 a {
     color: black;
