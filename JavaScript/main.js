@@ -62,6 +62,9 @@ function finalizarCompra() {
     }
 
     alert(`Total de productos: ${totalProductos}\nPrecio total: $${precioTotal}`);
+
+    window.location.href = "index.html"
+    total = 0
 }
 
 
