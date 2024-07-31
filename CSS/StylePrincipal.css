@@ -456,6 +456,18 @@ footer{
     /* border: 1px solid red; */
     display:grid;
     justify-content: space-around;
-    height: 60px;
+    align-items: end;
+    height: 80%;
+    color: cornsilk;
+    font-size: 20px;
+   
 }
 
+.regFoot{
+    color: cornsilk;
+    font-size: 40px;
+}
+
+.regFoot:hover{
+    color: blueviolet;
+}
