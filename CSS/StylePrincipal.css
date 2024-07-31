@@ -160,6 +160,9 @@ a:hover {
     /* border: 1px solid red; */
     width: 100%;
     height: auto;
+    color: darkslategrey;
+    font-size: 28px;
+    margin-bottom: 3px;
 }
 
 .fotoHistoria{
