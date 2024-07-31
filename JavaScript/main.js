@@ -7,6 +7,7 @@ let lista = document.getElementById("lista");
 const productos = ["Pan", "Leche", "Carne", "Yerba", "Fideos", "Arroz", "Coca-Cola", "Fosforos", "Pescado", "Jabon", "Detergente", "Atún"];
 const precios = ["10000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000", "4000", "12000"];
 const stock = [10, 5, 8, 15, 20, 12, 7, 9, 6, 11, 12, 7];
+const imagenes = ["","","","","","","","","","","",""]
 
 function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
 
