@@ -75,7 +75,7 @@ a {
 
 a:hover {
     color: teal;
-    
+    font-size: 20px;
 }
 
 .bloque2 {
@@ -110,11 +110,21 @@ a:hover {
 }
 
 .barra {
-    border: 3px solid gray;
+    border: 1px solid gray;
     border-radius: 20px;
     width: 80%;
-    height: 40px;
+    height: 35px;
     margin-left: 50px;
+}
+
+.barra:hover{
+    height: 40px;
+    border-color: blue;
+}
+
+.barra:focus{
+    height: 45px;
+    
 }
 
 .contenedorDibujos{
@@ -304,8 +314,10 @@ input{
 
 .btnFinCom:hover{
     border: 3px solid blue;
+    height: 60px;
     color: orange;
-    font-size: 28px
+    font-size: 24px
+    
 }
 
 
