@@ -29,6 +29,7 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         // Creo los botones para agregar al carrito.
         let botonAgregar = document.createElement("button");
         botonAgregar.textContent = "Agregar";
+        botonAgregar.setAttribute("class" , "btnAgregar")
         li.appendChild(botonAgregar);
         botonAgregar.addEventListener("click", function () {
             let cantidad = parseInt(inputCantidad.value); //Para que el usuario no ingrese texto.
