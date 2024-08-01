@@ -266,7 +266,8 @@ a:hover {
     margin: 10px;
     width: 30%;
     height: 20%;
-    
+    background-color: #e2e2e2;
+    box-shadow: 20px 20px 30px 10px grey;
 }
 
 .fotoProductos{
