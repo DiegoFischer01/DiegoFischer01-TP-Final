@@ -7,7 +7,7 @@ let lista = document.getElementById("lista");
 const productos = ["Pan", "Leche", "Carne", "Yerba", "Fideos", "Arroz", "Coca-Cola", "Fosforos", "Pescado", "Jabon", "Detergente", "Atún"];
 const precios = ["10000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000", "4000", "12000"];
 const stock = [10, 5, 8, 15, 20, 12, 7, 9, 6, 11, 12, 7];
-const imagenes = ["","","","","","","","","","","",""]
+const imagenes = ["C:\Cursos\TP FINAL\Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg","Imagenes\Imagenes de los productos\Pan.jpeg"]
 
 function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
 
@@ -17,6 +17,7 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         li.appendChild(texto);
         li.setAttribute("class", "liJS"); //Creo la clase "liJS" para darle estilo posteriormente a los li, que estan encerrados en divs.
         lista.appendChild(li); // Una vez creado el (li) con clase y todo, lo adoso al bloque "lista"(HTML).
+        
 
         // Creo los inputs para la cantidad de productos que quiero comprar.
         let inputCantidad = document.createElement("input");
@@ -25,6 +26,9 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         inputCantidad.min = "0"; // Para no poner comas.
         inputCantidad.setAttribute("class" , "inputs")
         li.appendChild(inputCantidad);
+
+
+        
 
         // Creo los botones para agregar al carrito.
         let botonAgregar = document.createElement("button");
@@ -41,10 +45,16 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
             }
         });
 
+        let img = document.createElement("img");
+        img.src = imagenes[i]; 
+        img.alt = `${arrayProductos[i]} Imagen`; 
+        img.setAttribute("class","fotoProducots")
+        li.appendChild(img);
+
     }
 }
 
-cargarProductos(productos, precios, stock);
+cargarProductos(productos, precios, stock, imagenes);
 
 
 //Boton para finalizar compra y mostrar total.

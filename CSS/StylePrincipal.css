@@ -263,9 +263,16 @@ a:hover {
     border: 2px solid lightgray;
     color: black;
     margin: 10px;
-    width: 25%;
+    width: 30%;
     height: auto;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
+   
+}
+
+.fotoProductos{
+    width: 15px;
+    height: auto;
+    
 }
 
 .inputs{
