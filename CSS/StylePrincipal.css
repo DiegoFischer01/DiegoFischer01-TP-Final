@@ -179,7 +179,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     font-size: 18px;
-    
+    margin-bottom: 15px;
 }
 
 .spHistoria{
@@ -199,7 +199,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    
+    margin-bottom: 50px;
 }
 
 .promo30Home{
