@@ -307,6 +307,7 @@ a:hover {
     font-size: 20px;
     background-color: lightblue;
     border-color: skyblue;
+    cursor: pointer;
 }
 
 input{
@@ -333,7 +334,7 @@ input{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     font-style: italic;
-
+    cursor: pointer;
 }
 
 .btnFinCom:hover{
@@ -363,7 +364,7 @@ input{
 h2{
     width: 100%;
     /* margin-bottom: 50px; */
-    
+    font-size: 32px;
 }
 
 h3{
