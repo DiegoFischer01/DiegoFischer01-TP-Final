@@ -137,9 +137,7 @@ a:hover {
     gap: 20px; /*Separacion entre elementos (dentro de este div*/
 }
 
-/* div>div>div{
-    margin: 5px;    
-} Esto ya no se necesita con (gap)*/
+
 
 .tiraHome{
     /* border: 2px solid green; */
