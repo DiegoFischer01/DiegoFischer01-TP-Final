@@ -270,8 +270,10 @@ a:hover {
 }
 
 .fotoProductos{
-    width: 15px;
+    width: 100px;
     height: auto;
+    margin-left: 30px;
+    margin-top: 50px;
     
 }
 
