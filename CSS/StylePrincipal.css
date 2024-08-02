@@ -131,10 +131,11 @@ a:hover {
     /* border: 1px solid black; */
     display: flex;
     flex-wrap: nowrap;
-    margin-right: 30px;
-    justify-content: space-evenly;
+    margin-right: 50px;
+    justify-content: right;
     width: 50%;
     height: 40%;
+    
     
 }
 
@@ -147,8 +148,8 @@ a:hover {
 }
 
 .icon:hover{
-    width: 50px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
 }
 
 .tiraHome{
@@ -267,7 +268,7 @@ a:hover {
     width: 30%;
     height: 20%;
     background-color: #e2e2e2;
-    box-shadow: 20px 20px 30px 10px grey;
+    box-shadow: 20px 20px 20px 10px grey;
     font-size: 20px;
     /* background: linear-gradient(transparent,steelblue); */
 }
