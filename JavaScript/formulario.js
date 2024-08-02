@@ -1,8 +1,6 @@
-
-
-
-
 //Formulario de contacto:
+
+
 let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
