@@ -110,22 +110,13 @@ a:hover {
 }
 
 .barra {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     border-radius: 20px;
     width: 70%;
     height: 35px;
     margin-left: 50px;
 }
 
-.barra:hover{
-    height: 40px;
-    border-color: blue;
-}
-
-.barra:focus{
-    height: 45px;
-    
-}
 
 .contenedorDibujos{
     /* border: 1px solid black; */
