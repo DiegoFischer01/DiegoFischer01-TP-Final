@@ -269,7 +269,7 @@ a:hover {
     background-color: #e2e2e2;
     box-shadow: 20px 20px 30px 10px grey;
     font-size: 20px;
-    background: linear-gradient(transparent,steelblue);
+    /* background: linear-gradient(transparent,steelblue); */
 }
 
 .fotoProductos{
