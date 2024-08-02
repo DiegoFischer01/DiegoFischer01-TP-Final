@@ -5,18 +5,26 @@ let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
 let telefono = document.getElementById("telefono");
-let consulta= document.getElementById("consulta");
+let consulta = document.getElementById("consulta");
 let btnenviar = document.getElementById("enviar");
-let informacion = [];
+let form = document.querySelector('.form'); // Agrega esta línea
 
 btnenviar.addEventListener("click", (e) => {
     e.preventDefault();
-    informacion[0] = nombre.value;
-    informacion[1] = apellido.value;
-    informacion[2] = email.value;
-    informacion[3] = telefono.value;
-    informacion[4] = consulta.value;
-    
-    let blob = new Blob([informacion], { type: "text/plain;charset=utf-8" });
+
+    // Verifica si algún campo está vacío
+    if (!nombre.value || !apellido.value || !email.value || !telefono.value || !consulta.value) {
+        alert("Por favor, completa todos los campos.");
+        return; // Detén el envío del formulario
+    }
+
+    // Si todos los campos están llenos, crea un objeto Blob con la información
+    const informacion = `${nombre.value}, ${apellido.value}, ${email.value}, ${telefono.value}, ${consulta.value}`;
+    const blob = new Blob([informacion], { type: "text/plain;charset=utf-8" });
+
+    // Guarda el archivo "contact.txt"
     saveAs(blob, "contact.txt");
-})
+
+    // Restablece el formulario después de enviar
+    form.reset();
+});
