@@ -1,9 +1,7 @@
-// /*JS TP Final con Jose*/ 
-
+// /*JS TP Final*/ 
 //Cargar arrays desde JS.
 
 let lista = document.getElementById("lista");
-
 const productos = ["Pan", "Leche", "Carne", "Yerba", "Fideos", "Arroz", "Coca-Cola", "Fosforos", "Pescado", "Jabon", "Detergente", "Atún"];
 const precios = ["10000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000", "4000", "12000"];
 const stock = [10, 5, 8, 15, 20, 12, 7, 9, 6, 11, 12, 7];
@@ -30,23 +28,20 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         li.appendChild(texto);
         li.setAttribute("class", "liJS"); //Creo la clase "liJS" para darle estilo posteriormente a los li, que estan encerrados en divs.
         lista.appendChild(li); // Una vez creado el (li) con clase y todo, lo adoso al bloque "lista"(HTML).
-        
 
         // Creo los inputs para la cantidad de productos que quiero comprar.
         let inputCantidad = document.createElement("input");
         inputCantidad.type = "number";
         inputCantidad.value = "0";
         inputCantidad.min = "0"; // Para no poner comas.
-        inputCantidad.setAttribute("class" , "inputs")
+        inputCantidad.setAttribute("class", "inputs")
         li.appendChild(inputCantidad);
 
-
-        
 
         // Creo los botones para agregar al carrito.
         let botonAgregar = document.createElement("button");
         botonAgregar.textContent = "Agregar";
-        botonAgregar.setAttribute("class" , "btnAgregar")
+        botonAgregar.setAttribute("class", "btnAgregar")
         li.appendChild(botonAgregar);
         botonAgregar.addEventListener("click", function () {
             let cantidad = parseInt(inputCantidad.value); //Para que el usuario no ingrese texto.
@@ -59,16 +54,15 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         });
 
         let img = document.createElement("img");
-        img.src = imagenes[i]; 
-        img.alt = `${arrayProductos[i]} Imagen`; 
-        img.setAttribute("class","fotoProductos")
+        img.src = imagenes[i];
+        img.alt = `${arrayProductos[i]} Imagen`;
+        img.setAttribute("class", "fotoProductos")
         li.appendChild(img);
 
     }
 }
 
 cargarProductos(productos, precios, stock, imagenes);
-
 
 //Boton para finalizar compra y mostrar total.
 
@@ -91,18 +85,3 @@ function finalizarCompra() {
     window.location.href = "index.html"
     total = 0
 }
-
-
-// //Funcion para crear imagenes desde JS.
-
-// function crearImagen(url, textoAlternativo){
-//     let img = document.createElement("img");
-//     img.setAttribute("src",url);
-//     img.setAttribute("alt" , textoAlternativo);
-//     img.setAttribute("class" , "tamaños");
-//     contenedor.appendChild(img);
-// }
-
-// crearImagen("./imagenJS.png" , "Imagen de JS");
-
-// crearImagen("./flores.jpg" , "Flores");

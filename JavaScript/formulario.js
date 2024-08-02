@@ -15,7 +15,7 @@ btnenviar.addEventListener("click", (e) => {
     // Verifica si algún campo está vacío
     if (!nombre.value || !apellido.value || !email.value || !telefono.value || !consulta.value) {
         alert("Por favor, completa todos los campos.");
-        return; // Detén el envío del formulario
+        return; // Se detiene el envio del formulario.
     }
 
     // Si todos los campos están llenos, crea un objeto Blob con la información
