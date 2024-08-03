@@ -94,7 +94,7 @@ a:hover {
 
 .logo {
     /* border: 1px solid yellow; */
-    width: 80%;
+    width: 90%;
     height: auto;
     margin-left: 40px;
 }
@@ -114,7 +114,7 @@ a:hover {
     border-radius: 20px;
     width: 70%;
     height: 35px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 

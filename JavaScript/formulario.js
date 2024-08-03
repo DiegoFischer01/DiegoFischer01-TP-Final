@@ -14,7 +14,7 @@ btnenviar.addEventListener("click", (e) => {
 
     // Verifica si algún campo está vacío
     if (!nombre.value || !apellido.value || !email.value || !telefono.value || !consulta.value) {
-        alert("Por favor, completa todos los campos.");
+        alert("Por favor, complete todos los campos.");
         return; // Se detiene el envio del formulario.
     }
 
