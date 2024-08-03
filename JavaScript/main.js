@@ -46,7 +46,7 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         botonAgregar.addEventListener("click", function () {
             let cantidad = parseInt(inputCantidad.value); //Para que el usuario no ingrese texto.
 
-            if (inputCantidad.value <0) {
+            if (inputCantidad.value < 0) {
                 alert("No se admiten valores negativos");
                 return;
             }
