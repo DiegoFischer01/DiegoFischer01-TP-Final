@@ -45,6 +45,12 @@ function cargarProductos(arrayProductos, arrayPrecios, arrayStock) {
         li.appendChild(botonAgregar);
         botonAgregar.addEventListener("click", function () {
             let cantidad = parseInt(inputCantidad.value); //Para que el usuario no ingrese texto.
+
+            if (inputCantidad.value <0) {
+                alert("No se admiten valores negativos");
+                return;
+            }
+
             if (cantidad <= arrayStock[i]) {
                 arrayStock[i] -= cantidad; // Si la cantidad seleccionada es menor o igual al stock, se resta del stock, y se agrega al carrito. 
                 alert(`${cantidad} ${arrayProductos[i]} agregado(s) al carrito.`); // Actualizar el texto del stock.
