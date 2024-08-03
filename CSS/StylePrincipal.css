@@ -14,13 +14,11 @@ body {
 }
 
 header {
-    /* border: 3px solid violet; */
     contain: content;
     background-color:orange;
     height: 80px;
     width: 100%;
     margin: 0;
-    /*Letras*/
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
@@ -65,7 +63,6 @@ h1:hover{
 }
 
 
-
 a {
     color: black;
     margin: 10px;
@@ -78,30 +75,17 @@ a:hover {
     font-size: 20px;
 }
 
-.bloque2 {
-    box-sizing: border-box;
-    /*Para que mantenga el tamaño siempre de los bordes*/
-    /* border: 2px solid; */
-    background-color:steelblue;
-    height: 120px;
-    width: 100%; /*Ancho*/
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center; /*Alineado vertical*/
-    justify-content: center;  /*Alineacion Horizontal*/
-    margin: 0;   
-}
 
 .logo {
     /* border: 1px solid yellow; */
-    width: 90%;
-    height: auto;
-    margin-left: 40px;
+    width: 60%;
+    height: 80%;
+    /* margin-left: 40px; */
 }
 
 .logo:hover{
-    width: 100%;
-    height: 100%;
+    width: 65%;
+    height: 65%;
 }
 
 .imgLogo{
