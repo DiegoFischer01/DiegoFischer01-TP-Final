@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <html lang="es-ar">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="./CSS/StylePrincipal.css">
-</head>
+    <link rel="stylesheet" href="./CSS/StylePrincipal.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="boxHeader">
+      <div class="boxHeader">
+        <a href="http://127.0.0.1:5500/index.html">
+          <div class="logo">
+            <img
+              src="./Imagenes/LogoRecortada.PNG"
+              alt="logo"
+              class="imgLogo"
+            />
+          </div>
+        </a>
 
-
-            <a href="http://127.0.0.1:5500/index.html">
-                <div class="logo">
-                    <img src="./Imagenes/LogoRecortada.PNG" alt="logo" class="imgLogo">
-                </div>
-            </a>
-
-            <div class="SuperSelecto">
-                <h1>SuperSelecto</h1>
-            </div>
-
-            <a href="http://127.0.0.1:5500/ListaDeProductos.html">
-                Productos </a>
-            <a href="http://127.0.0.1:5500/Contacto.html"> Contacto </a>
-
+        <div class="SuperSelecto">
+          <h1>SuperSelecto</h1>
         </div>
 
-
+        <a href="http://127.0.0.1:5500/ListaDeProductos.html"> Productos </a>
+        <a href="http://127.0.0.1:5500/Contacto.html"> Contacto </a>
+      </div>
     </header>
-
 
     <!---------------------------------------------------------------------------------- -->
 
-    <h3>Formulario de registo: </h3>
+    <h3>Formulario de registo:</h3>
 
     <div class="divForm">
-        <form class="form">
-
-            <div class="divFormNom">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
-            </div>
-
-            <div class="divFormApellido">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido">
-            </div>
-
-            <div class="divFormEmail">
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-            </div>
-
-            <div class="divFormTel">
-                <label for="text">Telefono: </label>
-                <input type="text" id="telefono">
-            </div>
-
-            <div class="divFormConsul">
-                <label for="text">Consultanos: </label>
-                <input type="text" id="consulta" class="inputFormConsul">
-            </div>
-
-            <div class="divEnv">
-                <button id="enviar" class="btnFormEnviar">Enviar</button>
-            </div>
-
-        </form>
-
-        <div class="fotoForm">
-            <img src="./Imagenes/callCenteUno.jpeg" alt="callCenter" class="call">
+      <form class="form">
+        <div class="divFormNom">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" />
         </div>
 
+        <div class="divFormApellido">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" />
+        </div>
+
+        <div class="divFormEmail">
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+        </div>
+
+        <div class="divFormTel">
+          <label for="text">Telefono: </label>
+          <input type="text" id="telefono" />
+        </div>
+
+        <div class="divFormConsul">
+          <label for="text">Consultanos: </label>
+          <input type="text" id="consulta" class="inputFormConsul" />
+        </div>
+
+        <div class="divEnv">
+          <button id="enviar" class="btnFormEnviar">Enviar</button>
+        </div>
+      </form>
+
+      <div class="fotoForm">
+        <img src="./Imagenes/callCenteUno.jpeg" alt="callCenter" class="call" />
+      </div>
     </div>
 
-
-
     <footer>
-        <div class="divsFoot1">
-            <span class="seguinos">Seguinos en nuestras redes:</span>
-            <span><img src="./Imagenes/Redes sociales.jfif" alt="Redes sociales" class="rsoc" class="imgPromoHome"></span>
+      <div class="divsFoot1">
+        <span class="seguinos">Seguinos en nuestras redes:</span>
+        <span
+          ><img
+            src="./Imagenes/Redes sociales.jfif"
+            alt="Redes sociales"
+            class="rsoc"
+            class="imgPromoHome"
+        /></span>
+      </div>
 
+      <div class="divsFoot2">
+        <span class="copyrightLogo">SS</span>
+        <span class="copyright1">Copyright|2024|SuperSelecto</span>
+        <span class="copyright2">Todos los derechos reservados</span>
+        <span class="copyright3">Diseño y Desarrollo por Diego Fischer</span>
+      </div>
 
-        </div>
-
-        <div class="divsFoot2">
-            <span class="copyrightLogo">SS</span>
-            <span class="copyright1">Copyright|2024|SuperSelecto</span>
-            <span class="copyright2">Todos los derechos reservados</span>
-            <span class="copyright3">Diseño y Desarrollo por Diego Fischer</span>
-        </div>
-
-        <div class="divsFoot3">
-            <span class="atc">ATENCION AL CLIENTE: </span>
-            <span class="llamanos"> 0800-444-1010 </span> 
-            
-
-        </div>
+      <div class="divsFoot3">
+        <span class="atc">ATENCION AL CLIENTE: </span>
+        <span class="llamanos"> 0800-444-1010 </span>
+      </div>
     </footer>
 
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"
-        integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src=" https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"
+      integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./JavaScript/formulario.js"></script>
-</body>
-
+  </body>
 </html>
