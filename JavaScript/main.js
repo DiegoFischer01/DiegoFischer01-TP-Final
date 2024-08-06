@@ -73,21 +73,24 @@ cargarProductos(productos, precios, stock, imagenes);
 //Boton para finalizar compra y mostrar total.
 
 const botonFinalizar = document.getElementById("finalizarCompra");
-botonFinalizar.addEventListener("click", finalizarCompra); //Use funcion regular por el hoisting.
+botonFinalizar.addEventListener("click", finalizarCompra);
 
 function finalizarCompra() {
     let totalProductos = 0;
     let precioTotal = 0;
 
-    const inputsCantidad = document.querySelectorAll(".liJS input[type='number']");// Para no agregar ID a cada producto use querySelectorAll (la clase .liJS hace referenciaa cada input, del tipo number, de la lista). 
+    const inputsCantidad = document.querySelectorAll(".liJS input[type='number']");
     for (let i = 0; i < inputsCantidad.length; i++) {
         const cantidad = parseInt(inputsCantidad[i].value);
         totalProductos += cantidad;
         precioTotal += cantidad * parseInt(precios[i]);
     }
 
-    alert(`Total de productos: ${totalProductos}\nPrecio total: $${precioTotal}`);
-
-    window.location.href = "index.html"
-    total = 0
+    if (totalProductos === 0) {
+        alert("¡Debes agregar al menos un producto antes de finalizar la compra!");
+    } else {
+        alert(`Total de productos: ${totalProductos}\nPrecio total: $${precioTotal}`);
+        window.location.href = "index.html";
+        total = 0;
+    }
 }
